@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalqa | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #F8FAFC;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #1E293B;
+            --text-secondary: #64748B;
+            --accent: #6366F1;
+            --accent-hover: #4F46E5;
+            --border: #E2E8F0;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 50px 40px;
+            background: linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 100%);
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .intro span.badge {
+            display: inline-block;
+            background: #E0E7FF;
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .intro h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .intro p.tagline {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .btn-outline:hover {
+            background-color: #F1F5F9;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #F1F5F9;
+            color: var(--text-primary);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border);
+        }
+
+        /* Project / Experience Cards */
+        .card {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Creative Service Box */
+        .creative-box {
+            background: linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 100%);
+            border: 1px solid #C7D2FE;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .creative-box h3 {
+            color: #4338CA;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .creative-box p {
+            color: #374151;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .instagram-badge {
+            display: inline-block;
+            background: #4F46E5;
+            color: #FFFFFF;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 25px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            background: #F8FAFC;
+        }
+
+        @media (max-width: 600px) {
+            .intro h1 { font-size: 2rem; }
+            .section { padding: 25px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Intro Section -->
+        <header class="intro">
+            <span class="badge">GCWUF • 3rd Semester ADCS</span>
+            <h1>Zalqa</h1>
+            <p class="tagline">Software Developer & Creative Designer</p>
+            <div class="social-buttons">
+                <a href="https://github.com/Zalqa-masoom" target="_blank" class="btn btn-outline">GitHub</a>
+                <a href="https://linkedin.com/in/zalqa-557b32405" target="_blank" class="btn btn-outline">LinkedIn</a>
+                <a href="mailto:zalqamasoom05@gmail.com" class="btn btn-primary">Contact Me</a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p style="color: var(--text-secondary);">
+                I am a Computer Science student at Government College Women University Faisalabad (GCWUF) in my 3rd semester, passionate about programming, system administration, and digital design.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>Tech Stack & Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">C++ Programming</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Visual Studio</span>
+                <span class="skill-tag">Linux Commands (Ubuntu)</span>
+                <span class="skill-tag">Bash Scripting</span>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section class="section">
+            <h2>Experience & Projects</h2>
+            <div class="card">
+                <h3>ePrecision Internship</h3>
+                <p>Worked on practical technical workflows, software development fundamentals, and collaborative tasks during the internship.</p>
+            </div>
+        </section>
+
+        <!-- Creative & Academic Services -->
+        <section class="section">
+            <h2>Creative & Design Services</h2>
+            <div class="creative-box">
+                <h3>Need a Portfolio, Resume or Assignment Help?</h3>
+                <p>Agar aapko apna portfolio, professional resume, ya university assignments banwani hon, toh mujhse rabta karein!</p>
+                <a href="https://instagram.com/pro._.profile._.pk" target="_blank" class="instagram-badge">@pro._.profile._.pk</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h2>Get In Touch</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 10px;">
+                <strong>Email:</strong> zalqamasoom05@gmail.com
+            </p>
+            <p style="color: var(--text-secondary);">
+                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/zalqa-557b32405" target="_blank" style="color: var(--accent);">linkedin.com/in/zalqa-557b32405</a>
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Zalqa. Built with clean light theme.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
