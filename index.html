@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #F8FAFC;
+            --bg-primary: #FAF5FF;
             --bg-secondary: #FFFFFF;
-            --text-primary: #1E293B;
-            --text-secondary: #64748B;
-            --accent: #6366F1;
-            --accent-hover: #4F46E5;
-            --border: #E2E8F0;
-            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --text-primary: #1E1B4B;
+            --text-secondary: #6B7280;
+            --accent: #8B5CF6;
+            --accent-hover: #7C3AED;
+            --border: #E9D5FF;
+            --card-shadow: 0 4px 6px -1px rgb(139 92 246 / 0.08), 0 2px 4px -2px rgb(139 92 246 / 0.04);
         }
 
         * {
@@ -44,14 +44,14 @@
         /* Intro Section */
         .intro {
             padding: 50px 40px;
-            background: linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 100%);
+            background: linear-gradient(135deg, #F3E8FF 0%, #FAF5FF 100%);
             border-bottom: 1px solid var(--border);
             text-align: center;
         }
 
         .intro span.badge {
             display: inline-block;
-            background: #E0E7FF;
+            background: #EDE9FE;
             color: var(--accent);
             padding: 6px 14px;
             border-radius: 20px;
@@ -102,13 +102,13 @@
         }
 
         .btn-outline {
-            background-color: transparent;
+            background-color: #FFFFFF;
             border: 1px solid var(--border);
             color: var(--text-primary);
         }
 
         .btn-outline:hover {
-            background-color: #F1F5F9;
+            background-color: #F3E8FF;
         }
 
         /* Content Sections */
@@ -139,18 +139,18 @@
         }
 
         .skill-tag {
-            background: #F1F5F9;
-            color: var(--text-primary);
+            background: #F3E8FF;
+            color: #5B21B6;
             padding: 8px 14px;
             border-radius: 8px;
             font-size: 0.9rem;
             font-weight: 500;
-            border: 1px solid var(--border);
+            border: 1px solid #DDD6FE;
         }
 
         /* Project / Experience Cards */
         .card {
-            background: #F8FAFC;
+            background: #FAF5FF;
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 20px;
@@ -161,6 +161,7 @@
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 6px;
+            color: #5B21B6;
         }
 
         .card p {
@@ -170,33 +171,38 @@
 
         /* Creative Service Box */
         .creative-box {
-            background: linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 100%);
-            border: 1px solid #C7D2FE;
+            background: linear-gradient(135deg, #F3E8FF 0%, #EDE9FE 100%);
+            border: 1px solid #DDD6FE;
             border-radius: 12px;
             padding: 25px;
             text-align: center;
         }
 
         .creative-box h3 {
-            color: #4338CA;
+            color: #5B21B6;
             margin-bottom: 8px;
             font-size: 1.2rem;
         }
 
         .creative-box p {
-            color: #374151;
+            color: #4C1D95;
             margin-bottom: 15px;
             font-size: 0.95rem;
         }
 
         .instagram-badge {
             display: inline-block;
-            background: #4F46E5;
+            background: var(--accent);
             color: #FFFFFF;
             padding: 8px 18px;
             border-radius: 20px;
             font-weight: 600;
             text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .instagram-badge:hover {
+            background: var(--accent-hover);
         }
 
         /* Footer */
@@ -205,7 +211,7 @@
             padding: 25px;
             color: var(--text-secondary);
             font-size: 0.85rem;
-            background: #F8FAFC;
+            background: #FAF5FF;
         }
 
         @media (max-width: 600px) {
@@ -266,7 +272,7 @@
             <h2>Creative & Design Services</h2>
             <div class="creative-box">
                 <h3>Need a Portfolio, Resume or Assignment Help?</h3>
-                <p>Agar aapko apna portfolio, professional resume, ya university assignments banwani hon, toh mujhse rabta karein!</p>
+                <p>Looking for a custom portfolio website, professional resume design, or university assignment help? Get in touch!</p>
                 <a href="https://instagram.com/pro._.profile._.pk" target="_blank" class="instagram-badge">@pro._.profile._.pk</a>
             </div>
         </section>
@@ -284,7 +290,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2026 Zalqa. Built with clean light theme.</p>
+            <p>© 2026 Zalqa. Built with a soft purple theme.</p>
         </footer>
     </div>
 
